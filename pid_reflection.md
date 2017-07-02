@@ -14,3 +14,5 @@ Describe how the final hyperparameters were chosen.
 ---------------------------------------------------
 
 - The final hyperparameters were chosen manual using the above ideas. The parameters were first set to zero, and the speed is kept constant at around 13 mph. Then, `Kp` is first increased to try to let the car stay in the middle on average. After that, `Kd` is increased to a point where the drive is sufficiently smooth without much fluctuations. Finally, the `Ki` is increased at a very low rate to reduce the effect of systematic biases.
+
+- The hyperparameters are chosen to be `Kp = 0.63, Ki = 0.003, Kd = 2` (see `main.cpp`).
